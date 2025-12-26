@@ -52,7 +52,6 @@ The application follows Django’s **MTV (Model–Template–View)** architectur
 
 ### 🔐 Authentication System
 - User registration and login
-- Secure session handling
 - Logout functionality
 - Permission-based access control
 
@@ -70,7 +69,6 @@ The application follows Django’s **MTV (Model–Template–View)** architectur
 ### 🗂 Category Management
 - Create multiple blog categories
 - Display blogs based on categories
-- Organized content structure
 
 ---
 
@@ -84,7 +82,6 @@ The application follows Django’s **MTV (Model–Template–View)** architectur
 ### 💬 Comment System
 - Logged-in users can add comments
 - Comments displayed under blog posts
-- Admin moderation support
 
 ---
 
@@ -97,14 +94,12 @@ The application follows Django’s **MTV (Model–Template–View)** architectur
 - Moderate comments
 - Access Django Admin panel
 
-### 🔹 Author
-- Create and manage own blog posts
-- View comments on authored posts
 
 ### 🔹 Normal User
 - View blog posts
 - Search blogs
 - Add comments
+- View comments
 
 ---
 
