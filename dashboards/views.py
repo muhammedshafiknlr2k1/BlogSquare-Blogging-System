@@ -17,7 +17,7 @@ def dashboard(request):
     }
     return render(request, 'dashboard/dashboard.html', context)
 
-
+@login_required(login_url='login')
 def categories(request):
     return render(request, 'dashboard/categories.html')
 
@@ -55,7 +55,7 @@ def delete_category(request, pk):
     category.delete()
     return redirect('categories')
 
-
+@login_required(login_url='login')
 def posts(request):
     posts = Blogs.objects.all()
     context = {
@@ -108,7 +108,7 @@ def delete_post(request, pk):
     post.delete()
     return redirect('posts')
 
-
+@login_required(login_url='login')
 def users(request):
     users = User.objects.all()
     context = {

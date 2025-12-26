@@ -5,16 +5,21 @@
 <div class="row">
     <!-- Left side Bar -->
     <!-- load sidebar here -->
+
     {% include 'dashboard/sidebar.html' %}
 
     <!-- Right side content -->
     <div class="col-md-9">
+        {% if perms.blogs.add_post %}
         <h2>Add New Post</h2>
         <form action="{% url 'add_post' %}" method="POST" style="width: 500;" enctype="multipart/form-data">
             {% csrf_token %}
             {{form | crispy}}
             <button type="submit" class="btn btn-warning">Submit</button>
         </form><br>
+        {%else%}
+        <h3>You don't have permission to add post</h3>
+        {%endif %}
     </div>
 </div>
 {% endblock %}
