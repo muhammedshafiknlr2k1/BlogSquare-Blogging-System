@@ -76,7 +76,7 @@ https://shafi.pythonanywhere.com
 
 ---
 
-##Learning Outcomes
+## Learning Outcomes
 
 - Through this project, I gained hands-on experience in:
 - Django project structure
