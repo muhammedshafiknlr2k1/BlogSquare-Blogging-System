@@ -77,8 +77,7 @@ https://shafi.pythonanywhere.com
 ---
 
 ## Learning Outcomes
-
-- Through this project, I gained hands-on experience in:
+Through this project, I gained hands-on experience in:
 - Django project structure
 - Django ORM and database relationships
 - Authentication and authorization
